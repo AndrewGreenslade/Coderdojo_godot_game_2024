@@ -45,10 +45,10 @@ texture = ExtResource("1_exylv")
 
 [node name="Cube" type="RigidBody2D" parent="."]
 position = Vector2(81.0001, 447)
-scale = Vector2(0.479998, 0.479998)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cube"]
+scale = Vector2(0.48, 0.48)
 shape = SubResource("RectangleShape2D_mtq5u")
 
-[node name="Sprite2D" type="Sprite2D" parent="Cube"]
+[node name="Sprite2D" type="Sprite2D" parent="Cube/CollisionShape2D"]
 texture = ExtResource("1_exylv")
