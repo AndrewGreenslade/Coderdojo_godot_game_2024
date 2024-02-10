@@ -19,9 +19,10 @@ position = Vector2(129, 126)
 collision_layer = 2
 collision_mask = 5
 
-[node name="Enemy" type="Area2D" parent="."]
+[node name="Enemy" type="CharacterBody2D" parent="."]
 position = Vector2(843, 430)
 collision_layer = 4
+collision_mask = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemy"]
 modulate = Color(1, 0, 0, 1)

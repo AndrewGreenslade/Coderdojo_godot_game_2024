@@ -32,5 +32,5 @@ func _physics_process(delta):
 		var collided_layer = collision.get_collider().get_collision_layer()
 		print("collision layer: ", collision.get_collider().get_collision_layer())
 
-		if collided_layer == 3:
+		if collided_layer == 4:
 			print("die")
