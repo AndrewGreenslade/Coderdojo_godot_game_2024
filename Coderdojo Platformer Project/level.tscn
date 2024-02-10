@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://dmb6cpj5rqtnw"]
+
+[ext_resource type="Texture2D" uid="uid://3qlqeymljpbi" path="res://icon.svg" id="1_exylv"]
+[ext_resource type="PackedScene" uid="uid://c0ohcck432eg6" path="res://player.tscn" id="1_r2v1r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lj0am"]
+size = Vector2(127, 128)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ggo2"]
+size = Vector2(125, 123)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mtq5u"]
+size = Vector2(128, 128)
+
+[node name="Level" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_r2v1r")]
+position = Vector2(129, 126)
+collision_layer = 2
+collision_mask = 5
+
+[node name="Enemy" type="Area2D" parent="."]
+position = Vector2(843, 430)
+collision_layer = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("1_exylv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy"]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_lj0am")
+
+[node name="Ground" type="StaticBody2D" parent="."]
+position = Vector2(579, 586)
+scale = Vector2(9.30817, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+position = Vector2(-0.5, 1.5)
+shape = SubResource("RectangleShape2D_5ggo2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground"]
+modulate = Color(0, 1, 0, 1)
+texture = ExtResource("1_exylv")
+
+[node name="Cube" type="RigidBody2D" parent="."]
+position = Vector2(81.0001, 447)
+scale = Vector2(0.479998, 0.479998)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cube"]
+shape = SubResource("RectangleShape2D_mtq5u")
+
+[node name="Sprite2D" type="Sprite2D" parent="Cube"]
+texture = ExtResource("1_exylv")

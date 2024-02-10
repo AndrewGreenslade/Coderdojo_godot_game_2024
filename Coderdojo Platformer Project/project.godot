@@ -11,5 +11,15 @@ config_version=5
 [application]
 
 config/name="Coderdojo Godot Platformer"
-config/features=PackedStringArray("4.2", "Forward Plus")
+config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
+
+[dotnet]
+
+project/assembly_name="Coderdojo Godot Platformer"
+
+[layer_names]
+
+2d_physics/layer_1="Default"
+2d_physics/layer_2="Player"
+2d_physics/layer_3="Enemies"
