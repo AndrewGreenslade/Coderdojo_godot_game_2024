@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://cmvhl8623ymy5"]
+
+[ext_resource type="Texture2D" uid="uid://c5uywiauq0seq" path="res://Textures/DinoSprites - mort.png" id="1_lmj1d"]
+[ext_resource type="Script" path="res://Enemy_Collisions.gd" id="2_w5t35"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7blt7"]
+size = Vector2(76, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_32pbv"]
+atlas = ExtResource("1_lmj1d")
+region = Rect2(0, 0, 26, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h5iny"]
+size = Vector2(171, 133)
+
+[node name="Enemy" type="RigidBody2D"]
+position = Vector2(563.5, -96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-1.5, 13.5)
+shape = SubResource("RectangleShape2D_7blt7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(0.5, 10)
+rotation = -3.14159
+scale = Vector2(5, -5)
+texture = SubResource("AtlasTexture_32pbv")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("2_w5t35")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(8, 15.5)
+shape = SubResource("RectangleShape2D_h5iny")

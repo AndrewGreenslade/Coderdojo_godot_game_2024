@@ -12,8 +12,8 @@ config_version=5
 
 config/name="Coderdojo Godot Platformer"
 run/main_scene="res://level.tscn"
-config/features=PackedStringArray("4.1", "Forward Plus")
-config/icon="res://icon.svg"
+config/features=PackedStringArray("4.2", "Forward Plus")
+config/icon="res://Textures/icon.svg"
 
 [dotnet]
 
@@ -24,3 +24,7 @@ project/assembly_name="Coderdojo Godot Platformer"
 2d_physics/layer_1="Default"
 2d_physics/layer_2="Player"
 2d_physics/layer_3="Enemies"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
