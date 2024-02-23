@@ -20,7 +20,7 @@ func _on_body_entered(body):
 		hasHit = true
 		hitTimer = timePerHit
 		body.lives -= 1
-		
+
 func _process(delta):
 	#update hit timer
 	if hasHit and hitTimer >= 0:

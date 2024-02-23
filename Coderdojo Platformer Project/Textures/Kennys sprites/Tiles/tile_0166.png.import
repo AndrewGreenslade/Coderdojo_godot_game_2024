@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5uywiauq0seq"
-path="res://.godot/imported/DinoSprites - mort.png-c894818ba6a3c6390148d0964958b4ef.ctex"
+uid="uid://b1364hjxlyvdm"
+path="res://.godot/imported/tile_0166.png-f66524c31cc95d08b41a369e49fd3f62.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/DinoSprites - mort.png"
-dest_files=["res://.godot/imported/DinoSprites - mort.png-c894818ba6a3c6390148d0964958b4ef.ctex"]
+source_file="res://Textures/Kennys sprites/Tiles/tile_0166.png"
+dest_files=["res://.godot/imported/tile_0166.png-f66524c31cc95d08b41a369e49fd3f62.ctex"]
 
 [params]
 
