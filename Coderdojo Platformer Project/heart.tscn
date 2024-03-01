@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bk5lv71xckfiw"]
+
+[ext_resource type="Script" path="res://heart.gd" id="1_2qrr1"]
+[ext_resource type="Texture2D" uid="uid://cut1ewwye0kf8" path="res://Textures/Kennys sprites/Tiles/Characters/tile_0000.png" id="2_xe8rx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h5iny"]
+size = Vector2(11.8, 12.2)
+
+[node name="Area2D" type="Area2D"]
+scale = Vector2(5, 5)
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_2qrr1")
+
+[node name="AnimatedSprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_xe8rx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.1, -0.1)
+shape = SubResource("RectangleShape2D_h5iny")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

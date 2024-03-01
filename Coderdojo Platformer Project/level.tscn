@@ -1,11 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://dmb6cpj5rqtnw"]
+[gd_scene load_steps=10 format=3 uid="uid://dmb6cpj5rqtnw"]
 
 [ext_resource type="PackedScene" uid="uid://c0ohcck432eg6" path="res://player.tscn" id="1_r2v1r"]
-[ext_resource type="PackedScene" path="res://enemy.tscn" id="2_410ox"]
+[ext_resource type="PackedScene" uid="uid://cau5pgtbkm52f" path="res://enemy.tscn" id="2_410ox"]
 [ext_resource type="TileSet" uid="uid://crymmhbjvf8dt" path="res://Tilesets/Main Tileset.tres" id="3_tbl8t"]
 [ext_resource type="Texture2D" uid="uid://biyllue1e6fmw" path="res://Textures/Kennys sprites/Tiles/tile_0095.png" id="4_aksks"]
 [ext_resource type="Script" path="res://NextLevelTrigger.gd" id="5_jirow"]
 [ext_resource type="PackedScene" uid="uid://4q4x147lgypf" path="res://level 2.tscn" id="6_q5mhp"]
+[ext_resource type="PackedScene" uid="uid://bk5lv71xckfiw" path="res://heart.tscn" id="7_hkyg8"]
+[ext_resource type="PackedScene" uid="uid://csvntht0y7dgu" path="res://coin.tscn" id="8_v1pqx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mg5gj"]
 size = Vector2(25, 28)
@@ -42,3 +44,21 @@ NextLevel = ExtResource("6_q5mhp")
 position = Vector2(-0.125, -19.125)
 scale = Vector2(0.6, 0.6)
 shape = SubResource("RectangleShape2D_mg5gj")
+
+[node name="Area2D" parent="." instance=ExtResource("7_hkyg8")]
+position = Vector2(-367, 45)
+
+[node name="Area2D2" parent="." instance=ExtResource("8_v1pqx")]
+position = Vector2(802, 51)
+
+[node name="Area2D3" parent="." instance=ExtResource("8_v1pqx")]
+position = Vector2(701, 48)
+
+[node name="Area2D4" parent="." instance=ExtResource("8_v1pqx")]
+position = Vector2(920, 40)
+
+[node name="Area2D5" parent="." instance=ExtResource("8_v1pqx")]
+position = Vector2(923, -96)
+
+[node name="Area2D6" parent="." instance=ExtResource("8_v1pqx")]
+position = Vector2(936, -253)

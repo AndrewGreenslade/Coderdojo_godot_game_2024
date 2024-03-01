@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://csvntht0y7dgu"]
+
+[ext_resource type="Texture2D" uid="uid://cioxse03khk80" path="res://Textures/Kennys sprites/Tiles/tile_0151.png" id="1_0ar7h"]
+[ext_resource type="Script" path="res://coin.gd" id="2_dgyj0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h5iny"]
+size = Vector2(11.8, 12.2)
+
+[node name="Area2D" type="Area2D"]
+scale = Vector2(5, 5)
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("2_dgyj0")
+
+[node name="AnimatedSprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0ar7h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.1, -0.1)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_h5iny")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
