@@ -1,11 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://dxi6yyhxr47b0"]
+[gd_scene load_steps=8 format=3 uid="uid://dmb6cpj5rqtnw"]
 
-[ext_resource type="PackedScene" uid="uid://d1soqxoberwyl" path="res://player.tscn" id="1_r2v1r"]
-[ext_resource type="PackedScene" uid="uid://cmvhl8623ymy5" path="res://enemy.tscn" id="2_410ox"]
+[ext_resource type="PackedScene" uid="uid://c0ohcck432eg6" path="res://player.tscn" id="1_r2v1r"]
+[ext_resource type="PackedScene" path="res://enemy.tscn" id="2_410ox"]
 [ext_resource type="TileSet" uid="uid://crymmhbjvf8dt" path="res://Tilesets/Main Tileset.tres" id="3_tbl8t"]
 [ext_resource type="Texture2D" uid="uid://biyllue1e6fmw" path="res://Textures/Kennys sprites/Tiles/tile_0095.png" id="4_aksks"]
 [ext_resource type="Script" path="res://NextLevelTrigger.gd" id="5_jirow"]
-[ext_resource type="PackedScene" uid="uid://b8bgjhlnb38xe" path="res://level 2.tscn" id="6_q5mhp"]
+[ext_resource type="PackedScene" uid="uid://4q4x147lgypf" path="res://level 2.tscn" id="6_q5mhp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mg5gj"]
 size = Vector2(25, 28)

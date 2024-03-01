@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8bgjhlnb38xe"]
+[gd_scene load_steps=4 format=3 uid="uid://4q4x147lgypf"]
 
-[ext_resource type="PackedScene" uid="uid://d1soqxoberwyl" path="res://player.tscn" id="1_6jw5g"]
-[ext_resource type="PackedScene" uid="uid://cmvhl8623ymy5" path="res://enemy.tscn" id="2_ouhhk"]
+[ext_resource type="PackedScene" uid="uid://c0ohcck432eg6" path="res://player.tscn" id="1_6jw5g"]
+[ext_resource type="PackedScene" path="res://enemy.tscn" id="2_ouhhk"]
 [ext_resource type="TileSet" uid="uid://crymmhbjvf8dt" path="res://Tilesets/Main Tileset.tres" id="3_llp4y"]
 
 [node name="Level" type="Node2D"]
