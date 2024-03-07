@@ -1,0 +1,37 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://dal61doa2igi2"]
+
+[ext_resource type="Texture2D" uid="uid://b3wemsnib37cl" path="res://Textures/Kennys sprites/Tilemap/tilemap-characters.png" id="1_7bgxp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e8jth"]
+atlas = ExtResource("1_7bgxp")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vbjqh"]
+atlas = ExtResource("1_7bgxp")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q2fw0"]
+atlas = ExtResource("1_7bgxp")
+region = Rect2(25, 0, 24, 24)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e8jth")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vbjqh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q2fw0")
+}],
+"loop": true,
+"name": &"Walking",
+"speed": 4.0
+}]

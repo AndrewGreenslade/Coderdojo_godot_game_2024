@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://c0ohcck432eg6"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_ylwug"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_ylwug"]
 [ext_resource type="Texture2D" uid="uid://b3wemsnib37cl" path="res://Textures/Kennys sprites/Tilemap/tilemap-characters.png" id="2_hltiq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o05n6"]
@@ -52,7 +52,6 @@ script = ExtResource("1_ylwug")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1.43051e-06, 0.500001)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_o05n6")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D"]
